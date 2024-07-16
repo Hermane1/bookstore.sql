@@ -1,20 +1,27 @@
--- Create a table named 'Books' with the following columns:
-```sql
-CREATE TABLE Books (
-    BookID INTEGER PRIMARY KEY,  -- Unique identifier for each book, primary key
-    Title TEXT,  -- Title of the book
-    Author TEXT,  -- Author of the book
-    PublicationYear INTEGER,  -- Year the book was published
-    Price REAL  -- Price of the book, can include decimal values
-);
-```sql
--- Insert data into the 'Books' table
-INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES 
-(1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),  -- First book entry
-(2, '1984', 'George Orwell', 1949, 9.99),  -- Second book entry
-(3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99),  -- Third book entry
-(4, 'Beloved', 'Toni Morrison', 1987, 17.00),  -- Fourth book entry
-(5, 'For Colored Girls who have considered suicide/ When the rainbow is enuf', 'Ntozake Shange', 1976, 13.69);  -- Fifth book entry with corrected title
+# Bookstore Database Assignment
+
+## SQL Queries
+
+1. **Create `Books` Table**:
+    ```sql
+    CREATE TABLE Books (
+        BookID INTEGER PRIMARY KEY,
+        Title TEXT,
+        Author TEXT,
+        PublicationYear INTEGER,
+        Price REAL
+    );
+    ```
+
+**Insert Data into the `Books` Table**:
+    ```sql
+    INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
+    (1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
+    (2, '1984', 'George Orwell', 1949, 9.99),
+    (3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99),
+    (4, 'The Catcher in the Rye', 'J.D. Salinger', 1951, 12.99),
+    (5, 'The Road', 'Cormac McCarthy', 2006, 15.99);
+    ```
 
 -- Retrieve all books from the 'Books' table
 SELECT * FROM Books;
