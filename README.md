@@ -2,9 +2,7 @@
 
 ## SQL Queries
 
-1. **Create `Books` Table**:
-    ```sql
-  CREATE TABLE Books (
+CREATE TABLE Books (
     BookID INTEGER PRIMARY KEY,
     Title TEXT,
     Author TEXT,
@@ -12,17 +10,16 @@
     Price REAL
 );
 Insert Data into the Books Table:
+INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
+(1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
+(2, '1984', 'George Orwell', 1949, 9.99),
+(3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99)
+(4,(4, 'Beloved', 'Toni Morrison', 1987, 17.00)
+(5, 'For Colored Girls who have condsidered suicide/ When the rainbow is enuf, 'Ntozake Shanhange',1976, 13.69)
+**Retrieve all books in the `Books` table**:
+```sql
+SELECT * FROM Books;
 
-    ```
-     **Insert Data into the `Books` Table**:
-    ```sql
-    INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
-    (1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
-    (2, '1984', 'George Orwell', 1949, 9.99),
-    (3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99)
-    (4,(4, 'Beloved', 'Toni Morrison', 1987, 17.00)
-    (5, 'For Colored Girls who have condsidered suicide/ When the rainbow is enuf, 'Ntozake Shanhange',1976, 13.69)
-    **Retrieve all books in the `Books` table**:
     ```sql
     SELECT * FROM Books;
     ```
