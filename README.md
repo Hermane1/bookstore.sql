@@ -14,15 +14,14 @@
     ```
 
 2. **Insert Data into the `Books` Table**:
-    ```sql
-    INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
+ ```sql
+ INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
 (1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
 (2, '1984', 'George Orwell', 1949, 9.99),
 (3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99),
 (4, 'Beloved', 'Toni Morrison', 1987, 17.00),
 (5, 'For Colored Girls Who Have Considered Suicide / When the Rainbow Is Enuf', 'Ntozake Shange', 1976, 13.69);
-
-    ```
+```
 
 3. **Retrieve all books in the `Books` table**:
     ```sql
