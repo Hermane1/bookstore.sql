@@ -13,7 +13,7 @@
     );
     ```
 
-**Insert Data into the `Books` Table**:
+2. **Insert Data into the `Books` Table**:
     ```sql
     INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
     (1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
@@ -23,33 +23,31 @@
     (5, 'The Road', 'Cormac McCarthy', 2006, 15.99);
     ```
 
--- Retrieve all books from the 'Books' table
-SELECT * FROM Books;
-```sql
-SELECT * FROM Books;
-
+3. **Retrieve all books in the `Books` table**:
     ```sql
     SELECT * FROM Books;
     ```
+
 4. **Retrieve all books published after 2000**:
     ```sql
     SELECT * FROM Books WHERE PublicationYear > 2000;
     ```
-    **Retrieve all books written by George Orwell**:
+
+5. **Retrieve all books written by George Orwell**:
     ```sql
-    SELECT * FROM Books WHERE Author = 'Harper Lee';
+    SELECT * FROM Books WHERE Author = 'George Orwell';
     ```
+
 6. **Update the price of '1984'**:
     ```sql
-    UPDATE Books SET Price = 9.99 WHERE BookID = 1;
+    UPDATE Books SET Price = 8.99 WHERE BookID = 2;
     ```
-    **Delete '1984'**:
+
+7. **Delete 'The Catcher in the Rye'**:
     ```sql
-    UPDATE Books SET Price = 10.99 WHERE BookID = 2;
+    DELETE FROM Books WHERE BookID = 4;
     ```
-    **Delete 'Beloved'**
-   ```sql
-   DELETE FROM Books WHERE BookID = 4;
-   ```
-   ## Reflection
-   This assignment provided me with hands-on experience in setting up and manipulating a SQLite database using basic SQL commands. Creating a database and tables, inserting data, and performing various queries were straightforward tasks that reinforced my understanding of SQL syntax and operations. The primary challenge I faced was ensuring the correct data types for each column and maintaining the consistency of the data. Working with SQLiteStudio made the process user-friendly, as it offers a graphical interface to manage the database easily. Overall, this exercise has deepened my appreciation for database management and the power of SQL in handling data efficiently.
+
+## Reflection
+
+This assignment provided me with hands-on experience in setting up and manipulating a SQLite database using basic SQL commands. Creating a database and tables, inserting data, and performing various queries were straightforward tasks that reinforced my understanding of SQL syntax and operations. The primary challenge I faced was ensuring the correct data types for each column and maintaining the consistency of the data. Working with SQLiteStudio made the process user-friendly, as it offers a graphical interface to manage the database easily. Overall, this exercise has deepened my appreciation for database management and the power of SQL in handling data efficiently.
