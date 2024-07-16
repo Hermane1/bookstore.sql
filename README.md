@@ -4,14 +4,14 @@
 
 1. **Create `Books` Table**:
     ```sql
-  -- Create a table named 'Books' with the following columns:
-CREATE TABLE Books (
+  CREATE TABLE Books (
     BookID INTEGER PRIMARY KEY,
     Title TEXT,
     Author TEXT,
     PublicationYear INTEGER,
     Price REAL
-);   
+);
+Insert Data into the Books Table:
 
     ```
      **Insert Data into the `Books` Table**:
