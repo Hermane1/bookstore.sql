@@ -16,11 +16,12 @@
 2. **Insert Data into the `Books` Table**:
     ```sql
     INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
-    (1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
-    (2, '1984', 'George Orwell', 1949, 9.99),
-    (3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99),
-    (4, 'The Catcher in the Rye', 'J.D. Salinger', 1951, 12.99),
-    (5, 'The Road', 'Cormac McCarthy', 2006, 15.99);
+(1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
+(2, '1984', 'George Orwell', 1949, 9.99),
+(3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99),
+(4, 'Beloved', 'Toni Morrison', 1987, 17.00),
+(5, 'For Colored Girls Who Have Considered Suicide / When the Rainbow Is Enuf', 'Ntozake Shange', 1976, 13.69);
+
     ```
 
 3. **Retrieve all books in the `Books` table**:
@@ -43,7 +44,7 @@
     UPDATE Books SET Price = 8.99 WHERE BookID = 2;
     ```
 
-7. **Delete 'The Catcher in the Rye'**:
+7. **Delete 'Beloved'**:
     ```sql
     DELETE FROM Books WHERE BookID = 4;
     ```
