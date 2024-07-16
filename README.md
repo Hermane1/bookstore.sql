@@ -1,22 +1,23 @@
-# Bookstore Database Assignment
-
-## SQL Queries
-
+-- Create a table named 'Books' with the following columns:
+```sql
 CREATE TABLE Books (
-    BookID INTEGER PRIMARY KEY,
-    Title TEXT,
-    Author TEXT,
-    PublicationYear INTEGER,
-    Price REAL
+    BookID INTEGER PRIMARY KEY,  -- Unique identifier for each book, primary key
+    Title TEXT,  -- Title of the book
+    Author TEXT,  -- Author of the book
+    PublicationYear INTEGER,  -- Year the book was published
+    Price REAL  -- Price of the book, can include decimal values
 );
-Insert Data into the Books Table:
-INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES
-(1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),
-(2, '1984', 'George Orwell', 1949, 9.99),
-(3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99)
-(4,(4, 'Beloved', 'Toni Morrison', 1987, 17.00)
-(5, 'For Colored Girls who have condsidered suicide/ When the rainbow is enuf, 'Ntozake Shanhange',1976, 13.69)
-**Retrieve all books in the `Books` table**:
+```sql
+-- Insert data into the 'Books' table
+INSERT INTO Books (BookID, Title, Author, PublicationYear, Price) VALUES 
+(1, 'To Kill a Mockingbird', 'Harper Lee', 1960, 10.99),  -- First book entry
+(2, '1984', 'George Orwell', 1949, 9.99),  -- Second book entry
+(3, 'The Great Gatsby', 'F. Scott Fitzgerald', 1925, 14.99),  -- Third book entry
+(4, 'Beloved', 'Toni Morrison', 1987, 17.00),  -- Fourth book entry
+(5, 'For Colored Girls who have considered suicide/ When the rainbow is enuf', 'Ntozake Shange', 1976, 13.69);  -- Fifth book entry with corrected title
+
+-- Retrieve all books from the 'Books' table
+SELECT * FROM Books;
 ```sql
 SELECT * FROM Books;
 
