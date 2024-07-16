@@ -4,13 +4,24 @@
 
 1. **Create `Books` Table**:
     ```sql
-    CREATE TABLE Books (
-        BookID INTEGER PRIMARY KEY,
-        Title TEXT,
-        Author TEXT,
-        PublicationYear INTEGER,
-        Price REAL
-    );
+  -- Create a table named 'Books' with the following columns:
+CREATE TABLE Books (
+    -- Column to store a unique identifier for each book
+    BookID INTEGER PRIMARY KEY,  -- 'INTEGER PRIMARY KEY' makes this column the primary key with unique values for each row
+
+    -- Column to store the title of the book
+    Title TEXT,  -- 'TEXT' data type to store the title of the book
+
+    -- Column to store the author of the book
+    Author TEXT,  -- 'TEXT' data type to store the author's name
+
+    -- Column to store the year the book was published
+    PublicationYear INTEGER,  -- 'INTEGER' data type to store the year of publication
+
+    -- Column to store the price of the book
+    Price REAL  -- 'REAL' data type to store the price of the book, which can include decimal values
+);
+
     ```
      **Insert Data into the `Books` Table**:
     ```sql
